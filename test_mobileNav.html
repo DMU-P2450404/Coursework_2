@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--Adding ko after lang defines the page as being in Korean as well as English-->
+<html lang="en, ko" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--This link is for the Korean font-->
+    <link href="https://fonts.google.com/specimen/Nanum+Gothic?subset=korean#standard-styles" rel="stylesheet" media="screen" type="text.css"/>
+    <link href="css/test_mobileNav.css" rel="stylesheet" type="text/css"/>
+    <script src="js/test_mobileNav.js"></script>
+    <!--This will be used to get icons from this website-->
+    <script src="https://kit.fontawesome.com/cb68f94bdf.js" crossorigin="anonymous"></script>
+    <title>Test | Mobile Nav</title>
+  </head>
+  <body>
+
+    <!--Creating a blank white div for the transparent header to sit on top of-->
+    <div class="whiteSpace"></div>
+
+    <!--Creating a top navigation bar-->
+    <header>
+      <a href="#"><img src="img/logo.png" alt="Kim So Hyun logo" id="logo"/></a>
+      <nav class="topnav" id="myTopNav">
+        <!--This anchor element is for the javascript that will show the menu icon that will be present on smaller screens-->
+        <ul class="topnav_center">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">FILMOGRAPHY</a></li>
+          <li><a href="#">GALLERY</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+          <!--This line adds the hamburger button from the FontAwesome website-->
+          <i class="fas fa-bars"></i>
+        </a>
+        <a href="javascript:void(0);" class="cross" onclick="myFunction()">
+          <!--This line adds the hamburger button from the FontAwesome website-->
+          <i class="fas fa-times"></i>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+
+    <p style="padding: 0px 15px 2500px">
+      김소현 Kim So Hyun
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+  </main>
+
+  </body>
+</html>
