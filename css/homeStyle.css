@@ -1,0 +1,521 @@
+/*---The following is for the Home top section---*/
+#homeHeader {
+  width: 100%;
+}
+
+
+/*---The following is for the About section---*/
+.about {
+  background-image: url("../img/AboutImage.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%; /*This is the width. Height is automatic. Try cover after*/
+  background-color: #000000;
+  margin-top: -5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/*Image reference: https://www.instagram.com/p/CLoHlUghS09/*/
+
+#homeHeading {
+  color: #eeeeee;
+}
+
+#aboutList {
+  list-style: none;
+}
+
+.aboutListHeader {
+  color: #bb71ee;
+}
+
+.aboutListText {
+  color: #eeeeee;
+}
+
+
+/*---The following is for the Awards section---*/
+.awards {
+  background-color: #232321;
+  margin-top: 0px;
+  padding-top: 0px;
+  }
+
+#awardsTable {
+  list-style: none;
+}
+
+
+
+/*---The following is to change some elements depending on the width of the browser window---*/
+/*This is for screens that are smaller than 425px wide (mobile s, m and l)*/
+@media screen and (max-width: 425px) {
+  p {
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  /*---This is for the Home intro section---*/
+  #homeHeading {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  /*---This is for the About section---*/
+  #aboutText {
+    color: #eeeeee;
+    padding: 0px 25px; /*top and bottom, then left and right*/
+  }
+  #aboutList {
+    margin: 50px 10px; /*top and bottom, then left and right*/
+    padding: 0px 7vw; /*top and bottom, then left and right*/
+  }
+  #aboutList li {
+    width: 75vw;
+    height: auto;
+    padding: 1.5vw 3vw; /*top and bottom, then left and right*/
+    border-top: 0.5px solid #eeeeee;
+  }
+  .aboutListHeader, .aboutListText {
+    margin: 5px 0px; /*top and bottom, then left and right*/
+  }
+  #aboutList #aboutEducation {
+    padding-left: 0px;
+    font-weight: 100;
+  }
+  #aboutList #aboutEducation li:before {
+    content: "•"; /*Insert content that looks like bullets*/
+    padding-right: 3px;
+  }
+  #aboutList #aboutEducation li {
+    border-top: none;
+    padding: 4px 0; /*top and bottom, then left and right*/
+  }
+
+  /*---This is for the Awards section---*/
+  .awards .awardsInner {
+    display: table;
+  }
+  .awards #awardsTable li div {
+    width: 50vw;
+    box-sizing: content-box;
+    height: 50vw;
+  }
+  #awardsHeader h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 19.5vw;
+    font-size: 8vw;
+    font-weight: 500;
+    color: #eeeeee;
+  }
+  #awardsTable {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  #awardsTable li {
+    width: 50vw;
+    height: 50vw;
+    float: left;
+    display: table;
+    padding: 0;
+    margin: 0;
+  }
+  #awardsTable img {
+    width: 49.8vw;
+    padding: 0;
+    margin-bottom: -4px;
+  }
+  #awardsTable li:nth-child(even) {
+    float: right;
+  }
+  #awardsTable #MBC_2017 {
+    margin-right: 50%;
+  }
+  #awardsTable #SBS_2013 {
+    margin-left: 50%;
+  }
+  #awardsTable #MBC_2012 {
+    margin-right: 50%;
+  }
+
+  /*---This is for the popup information for the Awards section---*/
+  .popup {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.7s;
+    width: 100vw;
+    background-color: rgba(43, 43, 41, 0.9);
+    color: #ffffff;
+    position: absolute;
+    top: auto;
+    padding: 0 auto;
+  }
+  #SBS_2013_Popup, #MBC_2012_Popup {
+    margin-top: 49.8vw; /*Sitting a little lower than the first four popups*/
+  }
+  .popup img {
+    width: 100vw;
+  }
+  .closeBtn {
+    position: absolute;
+    top: auto;
+    bottom: 100%;
+    right: auto;
+    left: 50%;
+    font-size: 10vw;
+  }
+  .popup .popupInfo {
+    padding: 1vw 0; /*top and bottom, then left and right*/
+    text-align: center;
+    margin: 0 3px; /*top and bottom, then left and right*/
+  }
+  .popup .popupInfo h2 {
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  .popup .popupInfo dt {
+    font-weight: 400;
+  }
+  .popup .popupInfo dd {
+    margin-left: 0;
+    font-weight: 100;
+  }
+  .popup .popupInfo p {
+    margin-top: 0px;
+    font-weight: 100;
+  }
+}
+
+
+/*This is for screens that are between 426px and 768px wide (tablet)*/
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  p {
+    font-size: 17px;
+    font-weight: 200;
+  }
+  h1 {
+    font-size: 50px;
+  }
+
+  /*---This is for the Home intro section---*/
+  #homeHeading {
+    margin-top: 5px;
+    text-align: center;
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 500;
+  }
+
+  /*---This is for the About section---*/
+  #aboutText {
+    color: #eeeeee;
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    padding-right: 25px;
+  }
+  .about {
+    overflow: hidden;
+    padding-top: 25px;
+  }
+  #aboutList {
+    margin: 50px 10px; /*top and bottom, then left and right*/
+    padding: 0px 8vw; /*top and bottom, then left and right*/
+  }
+  #aboutList li {
+    width: 33vw;
+    float: left;
+    height: auto;
+    padding: 1.5vw 0; /*top and bottom, then left and right*/
+    border-top: 0.5px solid #eeeeee;
+    display: table;
+  }
+  #aboutList li:nth-child(even) {
+    float: right;
+  }
+  .aboutListHeader, .aboutListText {
+    margin: 5px 0px; /*top and bottom, then left and right*/
+  }
+  #aboutList #aboutEducation {
+    padding-left: 0px;
+    font-weight: 200;
+  }
+  #aboutList #aboutEducation li:before {
+    content: "•"; /*Insert content that looks like bullets*/
+    padding-right: 3px;
+  }
+  #aboutList #aboutEducation li {
+    border-top: none;
+    padding: 4px 0; /*top and bottom, then left and right*/
+  }
+  #aboutList #aboutCompany {
+    border-bottom: 0.5px solid #eeeeee
+  }
+
+  /*---This is for the Awards section---*/
+  .awards .awardsInner {
+    display: table;
+  }
+  .awards #awardsTable li div {
+    width: 25vw;
+    box-sizing: content-box;
+    height: 25vw;
+  }
+  #awardsHeader h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 10vw;
+    font-size: 3.3vw;
+    font-weight: 500;
+    color: #eeeeee;
+  }
+  #awardsTable {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  #awardsTable li {
+    width: 25vw;
+    height: 25vw;
+    float: left;
+    display: table;
+    padding: 0;
+    margin: 0;
+  }
+  #awardsTable img {
+    width: 24.8vw;
+    padding: 0;
+    margin-bottom: -4px;
+  }
+  #awardsTable #MBC_2017 {
+    margin-left: 25%;
+  }
+  #awardsTable #KBS_2015{
+    margin-right: 25%;
+  }
+  #awardsTable #KBS_2014{
+    margin-right: 25%;
+  }
+  #awardsTable #SBS_2013 {
+    margin-left: 25%;
+  }
+  #awardsTable #MBC_2012 {
+    margin-right: 25%;
+  }
+
+  /*---This is for the popup information for the Awards section---*/
+  .popup {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.7s;
+    width: 100vw;
+    height: 50vw;
+    background-color: rgba(43, 43, 41, 0.9);
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: auto;
+  }
+  #SBS_2013_Popup, #MBC_2012_Popup {
+    margin-top: 25vw;
+  }
+  .popup img {
+    max-height: 50vw;
+    float: left;
+  }
+  .closeBtn {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 3vw;
+  }
+  .popup .popupInfo {
+    float: left;
+    padding: 12vw 5vw; /*top and bottom, then left and right*/
+  }
+  .popup .popupInfo h2 {
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  .popup .popupInfo dt {
+    font-weight: 400;
+  }
+  .popup .popupInfo dd {
+    margin-left: 0;
+    font-weight: 200;
+  }
+  .popup .popupInfo p {
+    margin-top: 5px;
+    font-weight: 200;
+  }
+}
+
+
+/*Changes navigation bar when the screen is more than 768px wide (anything bigger than tablet)*/
+@media screen and (min-width: 769px) {
+  p {
+    font-size: 18px;
+    font-weight: 200;
+  }
+  h1 {
+    font-size: 60px;
+  }
+
+  /*---This is for the Home intro section---*/
+  #homeHeading {
+    margin-top: 5px;
+    text-align: center;
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 500;
+  }
+
+  /*---This is for the About section---*/
+  #aboutText {
+    color: #eeeeee;
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    padding-right: 25px;
+  }
+  .about {
+    overflow: hidden;
+    padding-top: 35px;
+  }
+  #aboutList {
+    margin: 50px 10px; /*top and bottom, then left and right*/
+    padding: 0px 8vw; /*top and bottom, then left and right*/
+  }
+  #aboutList li {
+    width: 38vw;
+    float: left;
+    height: auto;
+    padding: 1.5vw 0; /*top and bottom, then left and right*/
+    border-top: 0.5px solid #eeeeee;
+    display: table;
+  }
+  #aboutList li:nth-child(even) {
+    float: right;
+  }
+  .aboutListHeader, .aboutListText {
+    margin: 5px 0px; /*top and bottom, then left and right*/
+  }
+  #aboutList #aboutEducation {
+    padding-left: 0px;
+    font-weight: 200;
+  }
+  #aboutList #aboutEducation li:before {
+    content: "•"; /*Insert content that looks like bullets*/
+    padding-right: 3px;
+  }
+  #aboutList #aboutEducation li {
+    border-top: none;
+    padding: 4px 0; /*top and bottom, then left and right*/
+  }
+  #aboutList #aboutCompany {
+    border-bottom: 0.5px solid #eeeeee
+  }
+
+  /*---This is for the Awards section---*/
+  .awards .awardsInner {
+    display: table;
+  }
+  .awards #awardsTable li div {
+    width: 25vw;
+    box-sizing: content-box;
+    height: 25vw;
+  }
+  #awardsHeader h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 10vw;
+    font-size: 3.6vw;
+    font-weight: 500;
+    color: #eeeeee;
+  }
+  #awardsTable {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  #awardsTable li {
+    width: 25vw;
+    height: 25vw;
+    float: left;
+    display: table;
+    padding: 0;
+    margin: 0;
+  }
+  #awardsTable img {
+    width: 24.8vw;
+    padding: 0;
+    margin-bottom: -4px;
+  }
+  #awardsTable #MBC_2017 {
+    margin-left: 25%;
+  }
+  #awardsTable #KBS_2015{
+    margin-right: 25%;
+  }
+  #awardsTable #KBS_2014{
+    margin-right: 25%;
+  }
+  #awardsTable #SBS_2013 {
+    margin-left: 25%;
+  }
+  #awardsTable #MBC_2012 {
+    margin-right: 25%;
+  }
+
+  /*---This is for the popup information for the Awards section---*/
+  .popup {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.7s;
+    width: 100vw;
+    height: 50vw;
+    background-color: rgba(43, 43, 41, 0.9);
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: auto;
+  }
+  #SBS_2013_Popup, #MBC_2012_Popup {
+    margin-top: 24.8vw;
+  }
+  .popup img {
+    max-height: 50vw;
+    float: left;
+  }
+  .closeBtn {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 3vw;
+  }
+  .popup .popupInfo {
+    float: left;
+    padding: 12vw 5vw; /*top and bottom, then left and right*/
+  }
+  .popup .popupInfo h2 {
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  .popup .popupInfo dt {
+    font-weight: 400;
+  }
+  .popup .popupInfo dd {
+    margin-left: 0;
+    font-weight: 200;
+  }
+  .popup .popupInfo p {
+    margin-top: 5px;
+    font-weight: 200;
+  }
+}
