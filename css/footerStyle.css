@@ -81,7 +81,7 @@ footer {
 /*Changes navigation bar when the screen is more than 768px wide (anything bigger than tablet)*/
 @media screen and (min-width: 769px) {
   footer {
-    padding: 4vw 2vw; /*top and bottom, then left and right*/
+    padding: 3.5vw 2vw; /*top and bottom, then left and right*/
   }
   .social_List {
     margin-top: -1vw;
@@ -92,10 +92,10 @@ footer {
   .social_List li a {
     padding: 5px 10px; /*top and bottom, then left and right*/
     margin: 10px;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
   }
   .social li a img {
-    height: 1.7vw;
+    height: 1.5vw;
   }
   .copyright {
     float: left;

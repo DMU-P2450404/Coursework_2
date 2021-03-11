@@ -35,7 +35,7 @@
 
 /*---The following is for the Awards section---*/
 .awards {
-  background-color: #232321;
+  background-color: #222122;
   margin-top: 0px;
   padding-top: 0px;
   }
@@ -356,7 +356,7 @@
 }
 
 
-/*Changes navigation bar when the screen is more than 768px wide (anything bigger than tablet)*/
+/*This is for screens that are bigger 768px wide (anything bigger than tablet)*/
 @media screen and (min-width: 769px) {
   p {
     font-size: 18px;
