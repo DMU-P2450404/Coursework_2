@@ -1,0 +1,153 @@
+/*This is general styling for the Gallery page that applies to all screen widths*/
+h1 {
+  color: #6218a4;
+}
+
+/*This is for the intro section*/
+.galleryIntro {
+  background-color: #c4c4c4;
+}
+.galleryIntro p {
+  color: #6218a4;
+}
+
+/*This is for the Collection section*/
+.collection {
+  background-color: #340058;
+}
+
+/*This is for the INterview section*/
+.interview {
+  background-color: #2d2d2d;
+}
+
+/*This is for screens that are smaller than 425px wide (mobile s, m and l)*/
+@media screen and (max-width :425px) {
+  p {
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .galleryIntro, .interview {
+    padding: 5vw;
+  }
+  .collection {
+    padding-top: 1.5vw;
+  }
+}
+
+/*This is for the heading section */
+@media screen and (max-width: 425px) {
+  #GalleryHeading {
+    width: 100%;
+    max-width: 425px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25); /*right, bottom, blur, colour*/
+  }
+  h1 {
+    margin: -5px 0 5px 0; /*top and bottom, then left and right*/
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .galleryIntro p {
+    padding: 0;
+    margin: 5px 0 10px; /*top, left and right, bottom*/
+  }
+}
+
+/*This is for the Collection section*/
+@media screen and (max-width: 425px) {
+  .collection img {
+    width: 100vw;
+    height: 100vw;
+    object-fit: cover;
+  }
+  /*Repositioning some of the images to fit in the container (object-fit)*/
+  #photo3 {
+    object-position: 100% 30%;
+  }
+  #photo9 {
+    object-position: 100% 5%;
+  }
+  #photo12 {
+    object-position: 100% 0%;
+  }
+  #photo15 {
+    object-position: 100% 0%;
+  }
+  #photo18 {
+    object-position: 100% 60%;
+  }
+
+  /*This is for the image popups in the Collection section*/
+  .collection .collectionInner {
+    display: table;
+  }
+  .popup {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.7s;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: auto;
+    z-index: 1;
+  }
+  .popup img {
+    width: 100vw;
+    height: 100%;
+    object-fit: fill;
+  }
+  .closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    font-size: 7vw;
+    color: #340058;
+  }
+  /*Repositioning most of the images for a better fade when clicked*/
+  #photo1_popup {
+    margin-top: -25%;
+  }
+  #photo2_popup {
+    margin-top: -19.3%;
+  }
+  #photo3_popup {
+    margin-top: -17.7%;
+  }
+  #photo4_popup {
+    margin-top: -25%;
+  }
+  #photo5_popup {
+    margin-top: -16.7%;
+  }
+  #photo6_popup {
+    margin-top: -19.3%;
+  }
+  #photo7_popup {
+    margin-top: -17%;
+  }
+  #photo8_popup {
+    margin-top: -15%;
+  }
+  #photo9_popup {
+    margin-top: -2.4%;
+  }
+  #photo10_popup {
+    margin-top: -19.4%;
+  }
+  #photo11_popup {
+    margin-top: -25.4%;
+  }
+  #photo13_popup {
+    margin-top: -21.8%;
+  }
+  #photo14_popup {
+    margin-top: -25%;
+  }
+  #photo16_popup {
+    margin-top: -22.6%;
+  }
+  #photo18_popup {
+    margin-top: -25%;
+  }
+}

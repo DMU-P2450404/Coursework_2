@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--Adding ko after lang defines the page as being in Korean as well as English-->
+<html lang="en, ko" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--This link is for the Korean font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="css/generalStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/navStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/footerStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/homeStyle.css" rel="stylesheet" type="text/css"/>
+    <script src="js/java.js"></script>
+    <!--This will be used to get icons from this website-->
+    <script src="https://kit.fontawesome.com/cb68f94bdf.js" crossorigin="anonymous"></script>
+    <title>Kim So Hyun | 김소현 | Home</title>
+  </head>
+  <body>
+
+    <!--Creating a blank white div for the transparent header to sit on top of-->
+    <div class="whiteSpace"></div>
+
+    <!--Creating a top navigation bar-->
+    <header>
+      <a href="index.html"><img src="img/logo.png" alt="Kim So Hyun logo" id="logo"/></a>
+      <nav class="topnav" id="myTopNav">
+        <!--This anchor element is for the javascript that will show the menu icon that will be present on smaller screens-->
+        <ul class="topnav_center"> <!--List used for easier styling in the mobile full screen navigation-->
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="filmography.html">FILMOGRAPHY</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+          <!--This line adds the hamburger button from the FontAwesome website-->
+          <i class="fas fa-bars"></i>
+        </a>
+        <a href="javascript:void(0);" class="cross" onclick="myFunction()">
+          <!--This line adds the hamburger button from the FontAwesome website-->
+          <i class="fas fa-times"></i>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+
+      <img src="img/HomeHeader.jpg" alt="Kim So Hyun header image" id="homeHeader"/>
+
+      <section class="about">
+        <!--black background, heading, image as background for heading, text, listed info-->
+
+        <!--Heading-->
+        <h1 id=homeHeading class="floatfix">About</h1>
+
+        <!--Body information-->
+        <p id="aboutText" class="floatfix">
+          <!--TEXT HERE NEEDS TO BE AS LONG AS THE LOREM IPSUM HERE AS IT FITS NICELY IN ALL WIDTHS. YOU CAN USE THIS PART IF YOU WANT TO: As a young Korean actress, Kim So Hyun is making her talent known all over the world. Find out everything about her life and works, see some beautiful photos, as well as hear some of her interviews.-->
+          김소현 Kim So Hyun
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <!--Listed information-->
+        <ul id="aboutList" class="floatfix">
+          <li>
+            <p class="aboutListHeader">Hangul Name</p>
+            <p class="aboutListText">김소현</p>
+          </li>
+          <li>
+            <p class="aboutListHeader">Hanja Name</p>
+            <p class="aboutListText">金所泫</p>
+          </li>
+          <li>
+            <p class="aboutListHeader">Nationality</p>
+            <p class="aboutListText">Korean</p>
+          </li>
+          <li>
+            <p class="aboutListHeader">Birthday</p>
+            <p class="aboutListText">4 June 1999, Australia</p>
+          </li>
+          <li>
+            <p class="aboutListHeader">Blood Type</p>
+            <p class="aboutListText">O</p>
+          </li>
+          <li>
+            <p class="aboutListHeader">Height</p>
+            <p class="aboutListText">164 cm (5'4")</p>
+          </li>
+          <li>
+            <p class="aboutListHeader">Weight</p>
+            <p class="aboutListText">46 kg (101 lbs)</p>
+          </li>
+          <li>
+            <p class="aboutListHeader">Occupation</p>
+            <p class="aboutListText">Actress, host, model</p>
+          </li>
+          <li>
+            <p class="aboutListHeader">Years Active</p>
+            <p class="aboutListText">2006 - present</p>
+          </li>
+          <li id="aboutCompany">
+            <p class="aboutListHeader">Entertainment Company</p>
+            <p class="aboutListText">Culture Depot</p>
+          </li>
+          <li style="border-bottom: 0.5px solid #eeeeee"> <!--Style placed here as it would be more than one line in the css file-->
+            <p class="aboutListHeader">Education</p>
+            <ul class="aboutListText" id="aboutEducation">
+              <li>Hoe-ryong Elementary School (2006 - 2011)</li>
+              <li>Towol Elementary School (2011 - 2012)</li>
+              <li>Munjung Middle School (2012 - 2015)</li>
+              <li>Hanyang University</li>
+            </ul>
+          </li>
+        </ul>
+        <!--Information sourced from: https://kprofiles.com/kim-hyun-profile-facts/-->
+
+      </section>
+
+      <section class="awards">
+        <!--dark grey background, heading, images-->
+        <div class="awardsInner">
+          <ul id="awardsTable"> <!--Using a list here as they will be easier to organise rather than divs-->
+            <li>
+              <div id="awardsHeader"><h1>Awards</h1></div>
+            </li>
+            <li id="KBS_2019">
+              <img src="img/KBS_2019_Logo.jpeg" alt="KBS Drama Awards 2019 logo"/>
+              <!--Image sourced from: https://asianwiki.com/File:2019_KBS_Drama_Awards-P1.jpg-->
+            </li>
+            <li id="MBC_2017">
+              <img src="img/MBC_2017_Logo.jpeg" alt="MBC Drama Awards 2017 logo"/>
+              <!--Image sourced from: https://namu.wiki/jump/127aebyxOulAFKjMOIETDy3OVfYbOjjq%2FM8KNLeSgRrCSQk8GbKmOvwZ%2B2CD3XxSexeI7NZDTz8%2FavWqxvVtyV2i8lYjggQENp%2FaknaZIbw%3D-->
+            </li>
+            <li id="KBS_2015">
+              <img src="img/KBS_2015_Logo.jpeg" alt="KBS Drama Awards 2015 logo"/>
+              <!--Image sourced from: https://asianwiki.com/File:2015_KBS_Drama_Awards-p1.jpg-->
+            </li>
+            <li id="KBS_2014">
+              <img src="img/KBS_2014_Logo.jpeg" alt="KBS Drama Awards 2014 logo"/>
+              <!--Image sourced from: https://asianwiki.com/File:2014_KBS_Drama_Awards-p1.jpg-->
+            </li>
+            <li id="SBS_2013">
+              <img src="img/SBS_2013_Logo.jpg" alt="SBS Drama Awards 2013 logo"/>
+              <!--Image sourced from: https://en.wikipedia.org/wiki/2013_SBS_Drama_Awards#/media/File:2013_SBS_Drama_Awards.jpg-->
+            </li>
+            <li id="MBC_2012">
+              <img src="img/MBC_2012_Logo.jpeg" alt="MBC Drama Awards 2012 logo"/>
+              <!--Image sourced from: https://asianwiki.com/images/e/ed/2012_MBC_Drama_Awards-a000.jpg-->
+            </li>
+          </ul>
+            <!--Information sourced from: https://asianwiki.com/Kim_So-Hyun_(1999)-->
+
+          <!--These divs are for the popups when the award logos are clicked to show more information-->
+          <!--I can use the same class names as the popups for the Gallery page as this html file does not have access to the Gallery page style sheet-->
+          <div id="KBS_2019_Popup" class="popup">
+            <img src="img/KBS_2019_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for KBS Drama Awards 2019"/>
+            <!--Image sourced from: https://entertain.naver.com/read?oid=015&aid=0004266142-->
+            <div id="KBS_2019_Info" class="popupInfo">
+              <h2>KBS Drama Awards 2019</h2>
+              <p>31st December 2019</p>
+              <dl> <!--Defines a description list-->
+                <dt>Excellent Actress</dt> <!--Defines terms or names-->
+                <dd>"조선로코-녹두전" | "The Tale of Nokdu"</dd> <!--Describes a term or name-->
+                <dt>Best Couple Award</dt>
+                <dd>"조선로코-녹두전" | "The Tale of Nokdu"</dd>
+              </dl>
+              <a id="KBS_2019CloseBtn" class="closeBtn">
+                  <!--This line adds the close button from the FontAwesome website-->
+                <i class="fas fa-times"></i>
+              </a>
+            </div>
+          </div>
+
+          <div id="MBC_2017_Popup" class="popup">
+            <img src="img/MBC_2017_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for MBC Drama Awards 2017"/>
+            <!--Image sourced from: https://photos.hancinema.net/photos/photo926123.jpg-->
+            <div id="MBC_2017_Info" class="popupInfo">
+              <h2>MBC Drama Awards 2017</h2>
+              <p>30th December 2017</p>
+              <dl> <!--Defines a description list-->
+                <dt>Most Popular Actress</dt> <!--Defines terms or names-->
+                <dd>"군주-가면의 주인" | "The Emperor: Owner of the Mask"</dd> <!--Describes a term or name-->
+              </dl>
+              <a id="MBC_2017CloseBtn" class="closeBtn">
+                  <!--This line adds the close button from the FontAwesome website-->
+                <i class="fas fa-times"></i>
+              </a>
+            </div>
+          </div>
+
+          <div id="KBS_2015_Popup" class="popup">
+            <img src="img/KBS_2015_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for KBS Drama Awards 2015"/>
+            <!--Image sourced from: https://www.hancinema.net/photos-2015-kbs-drama-awards-red-carpet--actresses-89980.html-->
+            <div id="KBS_2015_Info" class="popupInfo">
+              <h2>KBS Drama Awards 2015</h2>
+              <p>31st Demember 2015</p>
+              <dl> <!--Defines a description list-->
+                <dt>Best New Actress</dt> <!--Defines terms or names-->
+                <dd>"후아유: 학교 2015" | "Who Are You: School 2015"</dd> <!--Describes a term or name-->
+                <dt>Netizen Award</dt>
+                <dd>"후아유: 학교 2015" | "Who Are You: School 2015"</dd>
+                <dt>Best Couple Award</dt>
+                <dd>"후아유: 학교 2015" | "Who Are You: School 2015"</dd>
+              </dl>
+              <a id="KBS_2015CloseBtn" class="closeBtn">
+                  <!--This line adds the close button from the FontAwesome website-->
+                <i class="fas fa-times"></i>
+              </a>
+            </div>
+          </div>
+
+          <div id="KBS_2014_Popup" class="popup">
+            <img src="img/KBS_2014_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for KBS Drama Awards 2014"/>
+            <!--Image sourced from: https://www.hancinema.net/photos-2014-kbs-drama-awards-red-carpet-photos-actresses-77089.html-->
+            <div id="KBS_2014_Info" class="popupInfo">
+              <h2>KBS Drama Awards 2014</h2>
+              <p>31st Demember 2014</p>
+              <dl> <!--Defines a description list-->
+                <dt>Special Short Drama Actress</dt> <!--Defines terms or names-->
+                <dd>"다르게 운다" | "Drama Special: We All Cry Differently"</dd> <!--Describes a term or name-->
+              </dl>
+              <a id="KBS_2014CloseBtn" class="closeBtn">
+                  <!--This line adds the close button from the FontAwesome website-->
+                <i class="fas fa-times"></i>
+              </a>
+            </div>
+          </div>
+
+          <div id="SBS_2013_Popup" class="popup">
+            <img src="img/SBS_2013_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for SBS Drama Awards 2013"/>
+            <!--Image sourced from: https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5129%2F2013%2F12%2F31%2F1388487262_630023_59_20131231195502.jpg&type=sc960_832-->
+            <div id="SBS_2013_Info" class="popupInfo">
+              <h2>SBS Drama Awards 2013</h2>
+              <p>31st December 2013</p>
+              <dl> <!--Defines a description list-->
+                <dt>New Star Award</dt> <!--Defines terms or names-->
+                <dd>"수상한 가정부" | "The Suspicious Housekeeper"</dd> <!--Describes a term or name-->
+              </dl>
+              <a id="SBS_2013CloseBtn" class="closeBtn">
+                  <!--This line adds the close button from the FontAwesome website-->
+                <i class="fas fa-times"></i>
+              </a>
+            </div>
+          </div>
+
+          <div id="MBC_2012_Popup" class="popup">
+            <img src="img/MBC_2012_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for MBC Drama Awards 2012"/>
+            <!--Image sourced from: https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F038%2F2012%2F12%2F30%2F2012123022472363_1_rstarjun_59_20121230225738.jpg&type=sc960_832-->
+            <div id="MBC_2012_Info" class="popupInfo">
+              <h2>MBC Drama Awards 2012</h2>
+              <p>30th December 2012</p>
+              <dl> <!--Defines a description list-->
+                <dt>Best Child Actress</dt> <!--Defines terms or names-->
+                <dd>"해를 품은 달" | "The Moon Embracing The Sun"</dd> <!--Describes a term or name-->
+                <dd>"보고싶다" | "Missing You"</dd>
+              </dl>
+              <a id="MBC_2012CloseBtn" class="closeBtn">
+                  <!--This line adds the close button from the FontAwesome website-->
+                <i class="fas fa-times"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+
+      <div class="social">
+        <ul class="social_List floatfix">
+          <li><a href="https://www.instagram.com/wow_kimsohyun/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/hellokimsohyun"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Kim_So-hyun"><i class="fab fa-wikipedia-w"></i></a></li>
+          <li><a href="https://asianwiki.com/Kim_So-Hyun_(1999)"><img src="img/asianwiki_logo.png"/></a></li>
+        </ul>
+      </div>
+
+      <div class="copyright floatfix">
+        <p>COPYRIGHT © 2021 CULTURE DEPOT ALL RIGHTS RESERVED</p>
+      </div>
+
+    </footer>
+
+    <script>
+      document
+        .getElementById("KBS_2019") //id for the image on the page
+        .addEventListener("click", showKBS_2019);
+      document
+        .getElementById("KBS_2019CloseBtn") //id for the button to close the popup for each award show
+        .addEventListener("click", hideKBS_2019)
+
+
+      document
+        .getElementById("MBC_2017") //id for the image on the page
+        .addEventListener("click", showMBC_2017);
+      document
+        .getElementById("MBC_2017CloseBtn") //id for the button to close the popup for each award show
+        .addEventListener("click", hideMBC_2017)
+
+
+      document
+        .getElementById("KBS_2015") //id for the image on the page
+        .addEventListener("click", showKBS_2015);
+      document
+        .getElementById("KBS_2015CloseBtn") //id for the button to close the popup for each award show
+        .addEventListener("click", hideKBS_2015)
+
+
+      document
+        .getElementById("KBS_2014") //id for the image on the page
+        .addEventListener("click", showKBS_2014);
+      document
+        .getElementById("KBS_2014CloseBtn") //id for the button to close the popup for each award show
+        .addEventListener("click", hideKBS_2014)
+
+
+      document
+        .getElementById("SBS_2013") //id for the image on the page
+        .addEventListener("click", showSBS_2013);
+      document
+        .getElementById("SBS_2013CloseBtn") //id for the button to close the popup for each award show
+        .addEventListener("click", hideSBS_2013)
+
+
+      document
+        .getElementById("MBC_2012") //id for the image on the page
+        .addEventListener("click", showMBC_2012);
+      document
+        .getElementById("MBC_2012CloseBtn") //id for the button to close the popup for each award show
+        .addEventListener("click", hideMBC_2012)
+
+    </script>
+
+
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.floatfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: purple;
+  color: yellow;
+}

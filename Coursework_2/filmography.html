@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--This link is for the Korean font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="css/generalStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/navStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/footerStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/filmographyStyle_mobile.css" rel="stylesheet" type="text/css"/>
+    <link href="css/filmographyStyle_tablet.css" rel="stylesheet" type="text/css"/>
+    <link href="css/filmographyStyle_desktop.css" rel="stylesheet" type="text/css"/>
+    <!--Split the screen sizes into seperate css files for better organisation and ease to read-->
+    <script src="js/java.js"></script>
+    <!--This will be used to get icons from this website-->
+    <script src="https://kit.fontawesome.com/cb68f94bdf.js" crossorigin="anonymous"></script>
+    <title>Kim So Hyun | 김소현 | Filmography</title>
+  </head>
+  <body>
+
+    <!--Creating a blank white div for the transparent header to sit on top of-->
+    <div class="whiteSpace"></div>
+
+    <!--Creating a top navigation bar-->
+    <header>
+      <a href="index.html"><img src="img/logo.png" alt="Kim So Hyun logo" id="logo"/></a>
+      <nav class="topnav" id="myTopNav">
+        <!--This anchor element is for the javascript that will show the menu icon that will be present on smaller screens-->
+        <ul class="topnav_center">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="filmography.html">FILMOGRAPHY</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+          <!--This line adds the hamburger button from the FontAwesome website-->
+          <i class="fas fa-bars"></i>
+        </a>
+        <a href="javascript:void(0);" class="cross" onclick="myFunction()">
+          <!--This line adds the hamburger button from the FontAwesome website-->
+          <i class="fas fa-times"></i>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="filmIntro floatfix">
+        <!--light purple background, image, heading, text-->
+        <img src="img/FilmographyHeading.png" alt="Kim So Hyun header image" id="FilmHeading"/>
+        <div class="filmAbout">
+          <h1>Filmography</h1>
+          <p>
+            김소현 Kim So Hyun
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </section>
+
+      <section class="dramas">
+        <!--dark grey background, heading, list of dramas in drop downs-->
+        <h2>Dramas</h2>
+        <ul> <!--Using a list for easier organisation-->
+          <li id="river">
+            <p>달이 뜨는 강</p>
+            <p>River Where the Moon Rises</p>
+            <a id="riverArrowDown" class="arrow floatfix">
+              <!--This line adds the down arrow from the FontAwesome website-->
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="riverArrowUp" class="arrow floatfix">
+              <!--This line adds the up arrow from the FontAwesome website-->
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownRiver" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2021</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>평강/염가진 | Pyeong-Gang/Yeom Ga-Jin</dd>
+                <dt>Character name: </dt>
+                <dd>연왕 | Queen Yeon</dd>
+              </dl>
+              <p class="plot">The series retells the love story between Princess Pyeong-Gang and On Dal, who are characters in a classic Goguryeo folktale. Princess Pyeong-Gang, who was born as a princess but raised to be a person who killed a sinner also known as Yeom Ga-Jin, an ambitious woman who dreams to re-establish the status of Goguryeo and be the first female Taewang of Goguryeo. However, she uses Dal's feelings for her to achieve her goals.</p>
+              <!--Sourced from https://en.wikipedia.org/wiki/River_Where_the_Moon_Rises-->
+              <h3>Trailer</h3>
+              <video controls="true" poster="vid/RiverCoverImage.jpeg">
+                <source src="vid/RiverTrailer.ogv" type="video/ogg"/>
+                <source src="vid/RiverTrailer.mp4" type="video/mp4"/>
+                <p>If your browser cannot support the video, place click <a href="vid/RiverTrailer.mp4">here</a> .</p>
+              </video>
+              <!--Video quality is low and only two formats because of the file size for GitHub-->
+              <!--Video sourced from https://www.youtube.com/watch?v=SruaLVejWmk-->
+              <!--Cover image sourced from: https://awsimages.detik.net.id/community/media/visual/2021/01/15/river-where-the-moon-rise_43.jpeg?w=700&q=90-->
+            </div>
+          </li>
+          <li id="alarm">
+            <p>좋아하면 울리는</p>
+            <p>Love Alarm</p>
+            <a id="alarmArrowDown" class="arrow floatfix">
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="alarmArrowUp" class="arrow floatfix">
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownAlarm" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2019 (Season 1), 2021 (Season 2)</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>김조조 | Kim Jo-Jo</dd>
+              </dl>
+              <p class="plot">A mobile phone app 좋아하면 Love Alarm is created. If someone likes you and they are within 10 meters of you, the alarm for the app rings. The app also shows how many people like you, but the app doesn't reveal specific details on who likes you.</p>
+              <p class="plot">Kim Jo-Jo, a high school student, is pretty and smart. She seems like cheerful person, but her parents died when she was young. Since the death of her parents, Jo-Jo has lived with aunt's family which is not easy. She doesn't download the app Love Alarm.</p>
+              <p class="plot">Meanwhile, Hwang Sun-Oh is a popular male student at the same high school where Jo-Jo attends. He is the son of a wealthy family, but he is not loved by his parents. His best friend Lee Hye-Young also attends the same high school. Sun-Oh notices that his best friend Hye-Young likes Jo-Jo. Sun-Oh wants to know if his friend really likes her, so he kisses her.</p>
+              <!--Sourced from https://asianwiki.com/Love_Alarm-->
+            </div>
+          </li>
+          <li id="nokdu">
+            <p>조선로코 녹두전</p>
+            <p>The Tale of Nokdu</p>
+            <a id="nokduArrowDown" class="arrow floatfix">
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="nokduArrowUp" class="arrow floatfix">
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownNokdu" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2019</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>동동주 | Dong Dong-Ju</dd>
+              </dl>
+              <p class="plot">Jeon Nok-Du lives on an island with his father and older brother. Since he was little, his father did not let him study or go to the mainland. One day, his father and older brother are attacked by a group of female assassins. Nok-Du chases after one of the assassins to the capital. During that time, he meets Dong Dong-Ju. She wants to shoot the King with her arrow, but Nok-Du saves her from trouble. Meanwhile, the assassin that NokDu chases goes into a widow village. To find out who and why his family was attacked, Nok-Du disguises himself as a woman and enters the widow village. There, he meets Dong-Ju again to find that is an apprentice to become a gisaeng.</p>
+              <!--Sourced from https://asianwiki.com/The_Tale_of_Nokdu-->
+            </div>
+          </li>
+          <li id="radio">
+            <p>라디오 로맨스</p>
+            <p>Radio Romance</p>
+            <a id="radioArrowDown" class="arrow floatfix">
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="radioArrowUp" class="arrow floatfix">
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownRadio" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2018</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>송그림 | Song Geu-Rim</dd>
+              </dl>
+              <p class="plot">Song Geu-Rim works as an assistant radio program writer. Her mother became blind when Geu-Rim was 14 years old. Afterwards, she listened to the radio frequently with her mother. This led Geu-Rim to becoming a radio program writer, but she isn't exactly talented in writing. Her radio program DJ suddenly leaves Korea and Geu-Rim loses her job at the radio broadcasting station. Meanwhile, PD Lee Gang comes back to Korea from India. Lee Gang suggests to GeuRim that if she can cast Ji Soo-Ho, a top actor, as the DJ of their new radio program, she can work as the main writer of their radio program. Soo-Ho and his parents look perfectly happy, but in fact they are only acting as a happy family. He suffers from depression and can't sleep without taking sleeping pills. Geu-Rim keeps approaching SooHo to take the DJ position - he refuses. With Geu-Rim's enthusiastic and genuine approach, Soo-Ho eventually accepts.</p>
+              <!--Sourced from https://asianwiki.com/Radio_Romance-->
+            </div>
+          </li>
+          <li id="emperor">
+            <p>군주-가면의 주인</p>
+            <p>The Emperor: Owner of the Mask</p>
+            <a id="emperorArrowDown" class="arrow floatfix">
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="emperorArrowUp" class="arrow floatfix">
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownEmperor" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2017</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>한가은 | Han Ga-Eun</dd>
+              </dl>
+              <p class="plot">During the Joseon Dynasty, the long-awaited son of King Yi-Yoon is born, but in exchange for its life, the king will hand over the power of the Bureau of Water Supply to the secret society "Pyunsoo Group" who controls the government. The king covers the Crown Prince’s face with a mask and raises him secretly in order to protect him from the Pyunsoo Group.</p>
+              <p class="plot">Sixteen years later, Crown Prince Yi-Sun, who grew up as a respectable young man, removes his mask and leaves the palace secretly to go to the town to find out why he has been masked since he was born. The purpose is to meet scholar Master WooBo - the only person who knows why.</p>
+              <p class="plot">Crown Prince Yi-Sun then meets high-ranking official’s daughter Lady Han Ga-Eun and a young man who has the same name as himself, Yi-Sun, and deepens friendship with them.</p>
+              <p class="plot">After some time, the secret society Pyunsoo Group assassinates King Yi-Yoon but Crown Prince Yi-Sun escaped. The Pyunsoo Group put a fake king on the throne and controls this king and the whole Imperial Court by using a suspicious drug with poisonous properties. Having witnessed the people's suffering, the Crown Prince decides to devote himself to fight the Pyunsoo Group and reclaim his throne.</p>
+              <!--Sourced from https://en.wikipedia.org/wiki/The_Emperor:_Owner_of_the_Mask-->
+            </div>
+          </li>
+          <li id="goblin">
+            <p>쓸쓸하고 찬란하신 – 도깨비</p>
+            <p>Guardian: The Lonely and Great God</p>
+            <a id="goblinArrowDown" class="arrow floatfix">
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="goblinArrowUp" class="arrow floatfix">
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownGoblin" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2016 - 2017</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>김선 | Kim Sun (queen)</dd>
+              </dl>
+              <p class="plot">In ancient times, Kim Shin is an unbeatable general in wars, but the young King is jealous of Kim Shin and kills him. Kim Shin becomes 도깨비 Goblin, possessing an immortal life. At first he thinks that he is blessed, but he realizes that he is cursed.</p>
+              <p class="plot">Closer to the present day, Kim Shin has waited 900 years for a human bride to end his immortal life. One night, he saves a dying pregnant woman who is destined to die. Meanwhile, the Grim Reaper is unable to find the dead pregnant woman. The woman gives birth to a baby girl named Ji Eun-Tak. EunTak lives with her mother and is able to see ghosts. One night, at the age of 9, her mother suddenly dies. On that night, she meets the Grim Reaper.</p>
+              <p class="plot">In the present day, Eun-Tak is a high school student. She still sees ghosts and hears their whisper of Goblin's bride.” She now lives with her aunt’s family, but she is mistreated by them. On her birthday, Eun-Tak sits by the sea with a lighted birthday cake. At that time, Kim Shin suddenly appears in front of her. Kim Shin does not know why, but he can hear her voice and appears in front of her against his will. Coincidentally, Kim Shin lives with the Grim Reaper at the same house. Later, Eun-Tak tells him that he is Goblin and she is his bride.</p>
+              <!--Sourced from https://asianwiki.com/Guardian:_The_Lonely_and_Great_God-->
+            </div>
+          </li>
+          <li id="ghost">
+            <p>싸우자 귀신아</p>
+            <p>Bring it on, Ghost</p>
+            <a id="ghostArrowDown" class="arrow floatfix">
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="ghostArrowUp" class="arrow floatfix">
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownGhost" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2016</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>김현지 | Kim Hyun-Ji</dd>
+              </dl>
+              <p class="plot">Park Bong-Pal has grown up with the ability to see ghosts. He uses his power to work as an exorcist, banishing ghosts in order to make enough money to undergo a procedure that will take his ability away. At a haunted high school, he encounters Kim Hyun-Ji, a feisty high school student, who, because of a traffic accident, became a wandering spirit. Hyun-Ji believes that Bong-Pal might hold the secret as to why she is a spirit. In order to be freed from endlessly wandering the earth and be able to ascend to the next life, Hyun-Ji convinces Bong-Pal to let her move in, and the two become ghost fighting partners. With Hyun-Ji, Bong-Pal finds that he can fight even stronger ghosts, but also learns that not all ghosts are malevolent.</p>
+              <p class="plot">Working and living together, Bong-Pal finds himself falling in love with Hyun-Ji, who returns his feelings. However, both are unaware that they are being stalked by an evil spirit that was the cause of Hyun-Ji's accident and is the reason Bong-Pal can see ghosts.</p>
+              <!--Sourced from https://en.wikipedia.org/wiki/Hey_Ghost,_Let%27s_Fight-->
+            </div>
+          </li>
+          <li id="page">
+            <p>페이지 터너</p>
+            <p>Page Turner</p>
+            <a id="pageArrowDown" class="arrow floatfix">
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="pageArrowUp" class="arrow floatfix">
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownPage" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2016</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>윤유슬 | Yoon Yoo-Seul</dd>
+              </dl>
+              <p class="plot">Yoo-Seul is a student of an art high school. She is a talented pianist and who won various contests, but she is driven by her mother. Yoo-Seul's mother wanted to become a pianist when she was younger. One day, Yoo-Seul has an accident. Yoo-Seul may never play the piano again because of the accident. With the help of her friend Cha-Sik and YooSeul's rival Jin-Mok, Yoo-Seul begins to live a new life.</p>
+              <!--Sourced from https://asianwiki.com/Page_Turner-->
+            </div>
+          </li>
+          <li id="nightmare">
+            <p>악몽선생</p>
+            <p>Nightmare High</p>
+            <a id="nightmareArrowDown" class="arrow floatfix">
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="nightmareArrowUp" class="arrow floatfix">
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownNightmare" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2016</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>강예림 | Kang Ye-Rim</dd>
+              </dl>
+              <p class="plot">The homeroom teacher of 2nd grade 3 class at Yosan Private High School had an accident and is hospitalised. Han Bong-Gu now becomes the temporary 2nd grade 3 class homeroom teacher. He is mysterious figure. The teachers at the school know about him well, but he is not on the teaching staff list. Han Bong-Gu arouses the desires of each students and leads them into an illusory world.</p>
+              <!--Sourced from https://asianwiki.com/Nightmare_High-->
+            </div>
+          </li>
+          <li id="who_are_you">
+            <p>후아유: 학교 2015</p>
+            <p>Who Are You: School 2015</p>
+            <a id="who_are_youArrowDown" class="arrow floatfix">
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="who_are_youArrowUp" class="arrow floatfix">
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownWho_are_you" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2015</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>이은비 | Lee Eun-Bi</dd>
+                <dt>Character name: </dt>
+                <dd>고은별 | Go Eun-Byeol</dd>
+              </dl>
+              <p class="plot">Go Eun-Byeol and Lee Eun-Bi are identical twins who were separated after one is adopted at the age of 5.</p>
+              <p class="plot">Eun-Bi lives at the Love House, an orphanage in Tongyeong, South Gyeongsang Province, where the younger residents look up to her as a mother figure. However, she hides the fact that she is bullied at school by a gang of mean girls led by Kang So-Young, while teachers turn a blind eye.</p>
+              <p class="plot">On the other hand, Go Eun-Byeol is studying at Sekang High School, the most prestigious private high school in Seoul's Gangnam District. Eun-Byeol's best friend is Han Yi-An, the school's star swimmer and is in love with her since childhood.</p>
+              <p class="plot">The two are forced to switch places after an accident on a school field trip. However, only Eun-Byeol is aware of the other's existence. Unlike the cheerful Eun-Bi, Eun-Byeol is prickly and secretive.</p>
+              <!--Sourced from https://en.wikipedia.org/wiki/Who_Are_You:_School_2015-->
+            </div>
+          </li>
+          <li id="smells">
+            <p>냄새를 보는 소녀</p>
+            <p>A Girl Who Sees Smells</p>
+            <a id="smellsArrowDown" class="arrow floatfix">
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="smellsArrowUp" class="arrow floatfix">
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownSmells" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2015</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>최은설 | Choi Eun-Seol</dd>
+              </dl>
+              <p class="plot">3 years ago, a man lost his younger sister in the "Bar Code" murder case. Since then he has lost his senses. A girl miraculously survived the "Bar code" murder case. Since then, she has lost her memory, but also has gained the ability to see smells.</p>
+              <!--Sourced from https://asianwiki.com/A_Girl_Who_Sees_Smells-->
+            </div>
+          </li>
+          <li id="voice">
+            <p>너의 목소리가 들려</p>
+            <p>I Can Hear Your Voice</p>
+            <a id="voiceArrowDown" class="arrow floatfix">
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="voiceArrowUp" class="arrow floatfix">
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownVoice" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2013</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>장혜성 | Jang Hye-Sung</dd>
+              </dl>
+              <p class="plot">9 year old Soo-Ha and his father are in a car when they are suddenly struck by a truck driven by Min Joon-Kook. Joon-Kook then gets out of his truck and jumps on the hood of their car. Soo-Ha and Joon-Kook's eyes meet through the windshield. Suddenly, Soo-Ha is able to hear the man's violent thoughts - "I need to finish this".</p>
+              <p class="plot">Joon-Kook goes to his truck and gets out a baseball bat. He fatally strikes Soo-Ha's father dead with the bat. Soo-Ha is in complete shock. When Joon-Kook turns to strike Soo-Ho, the sound of a camera flash goes off and Joon-Kook goes after whoever is taking the pictures. This saves Soo-Ha's life.</p>
+              <p class="plot">The person with the camera is a young girl named Jang Hye-Sung . Later, Hye-Sung testifies against Joon-Kook in court. Joon-Kook claims that Soo-Ha's father died in the car accident. Through the court proceedings, Soo-Ha falls in love with Hye-Sung. Soo-Ha promises to protect Hye-Sung from Joon-Kook, when he threatens to get revenge on her.</p>
+              <p class="plot">10 years later, Soo-Ha is now an exemplary high student. Nobody is aware that Soo-Ha possesses telepathic abilities. Meanwhile, Hye-Sung now works as an attorney, but she doesn't uphold the virtues of her profession very well. She is also not very successful and barely makes £1,000 a month. Her mother then pushes her to apply for a public defender position due to its higher pay.</p>
+              <!--Sourced from https://asianwiki.com/I_Can_Hear_Your_Voice-->
+            </div>
+          </li>
+          <li id="moon">
+            <p>해를 품은 달</p>
+            <p>The Moon Embracing the Sun</p>
+            <a id="moonArrowDown" class="arrow floatfix">
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="moonArrowUp" class="arrow floatfix">
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownMoon" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2012</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>윤보경 | Yoon Bo-Gyung</dd>
+              </dl>
+              <p class="plot">Thirteen year old Heo Yeon-Woo, the daughter of a high-ranking official, accompanies her mother to the royal palace to attend her brother, Heo-Yeom's civil service examination congratulatory ceremony. By chance, she comes across Crown Prince Lee-Hwon. They fall in love and Yeon-Woo is chosen as the Crown Princess of Joseon.</p>
+              <p class="plot">Before they can marry, however, the Dowager Queen secretly orders her death, in order to install Yoon Bo-Gyeong, the daughter of a family clan, as Crown Princess, thus securing more power for herself. She orders head shaman to cast a spell on Yeon-Woo to strike her with an unknown sickness. After dying, Yeon-Woo is resurrected from her grave but loses her memories. All believe her to be dead, including the Crown Prince Lee-Hwon, who refuses to love another. Eight years later, Yeon-Woo returns as a shaman named Wol (meaning moon). Meanwhile, the young king begins to investigate the death of his love after seeing the grown-up Wol. But he is fighting against time because the queen's powerful political clan wants him removed from power.</p>
+              <!--Sourced from https://asianwiki.com/The_Moon_Embracing_The_Sun-->
+            </div>
+          </li>
+        </ul>
+
+      </section>
+
+      <section class="movies">
+        <!--light grey background, heading, list of movies in drop downs-->
+        <h2>Movies</h2>
+        <ul> <!--Using a list for easier organisation-->
+          <li id="princess">
+            <p>덕혜옹주</p>
+            <p>The Last Princess</p>
+            <a id="princessArrowDown" class="arrow floatfix">
+              <!--This line adds the down arrow from the FontAwesome website-->
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="princessArrowUp" class="arrow floatfix">
+              <!--This line adds the up arrow from the FontAwesome website-->
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownPrincess" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2016</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>덕혜옹주 | Princess Deokhye</dd>
+              </dl>
+              <p class="plot">Princess Deokhye was the last princess of Korea. Under Japanese colonial rule, she is taken to Japan as a hostage. With the era's harsh conditions, she struggles to maintain the hope of the Korean people. Jang-Han is a fighter for Korean independence. His mission is to bring Princess Deokhye back to South Korea and he also loves her. </p>
+              <!--Sourced from https://asianwiki.com/The_Last_Princess_(Korean_Movie)-->
+              <h3>Trailer</h3>
+              <video controls="true" poster="vid/PrincessCoverImage.jpeg">
+                <source src="vid/PrincessTrailer.ogv" type="video/ogg"/>
+                <source src="vid/PrincessTrailer.webm" type="video/webm"/>
+                <source src="vid/PrincessTrailer.mp4" type="video/mp4"/>
+                <p>If your browser cannot support the video, place click <a href="vid/PrincessTrailer.mp4">here</a> .</p>
+              </video>
+              <!--Video quality is low and only two formats because of the file size for GitHub-->
+              <!--Video sourced from: https://www.youtube.com/watch?v=-XBNPgJmBOQ-->
+              <!--Cover image sourced from: http://www.lotteent.com/DM/dm_2016/images/DM_princess160704.jpg-->
+            </div>
+          </li>
+          <li id="unforgettable">
+            <p>순정</p>
+            <p>Unforgettable</p>
+            <a id="unforgettableArrowDown" class="arrow floatfix">
+              <!--This line adds the down arrow from the FontAwesome website-->
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="unforgettableArrowUp" class="arrow floatfix">
+              <!--This line adds the up arrow from the FontAwesome website-->
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownUnforgettable" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2016</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>수옥 | Soo-Ok</dd>
+              </dl>
+              <p class="plot">In 2014, a radio DJ gets a letter from his first love that brings up almost-forgotten memories of the past.</p>
+              <p class="plot">23 years ago in 1991, five friends spend the summer together. One of them, shy and innocent Beom-Sil falls in love with Soo-Ok. Beom-Sil has a noticeable crush on Soo-Ok and waits by the girl's window during the summer. Soo-Ok suffers from a leg injury that renders her unable to walk properly so she is always carried by Boem-Sil. The love blossoms and how he always sees her as the girl he had want to marry.</p>
+              <!--Sourced from https://en.wikipedia.org/wiki/Pure_Love_(film)-->
+            </div>
+          </li>
+          <li id="killer">
+            <p>더 웹툰 : 예고살인</p>
+            <p>Killer Toon</p>
+            <a id="killerArrowDown" class="arrow floatfix">
+              <!--This line adds the down arrow from the FontAwesome website-->
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="killerArrowUp" class="arrow floatfix">
+              <!--This line adds the up arrow from the FontAwesome website-->
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownKiller" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2013</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>서미숙 | Seo Mi-Sook</dd>
+              </dl>
+              <p class="plot">A web comic artist becomes the primary suspect in two deaths when her drawings depict the crime scenes down to the last detail.</p>
+              <!--Sourced from https://www.google.com/search?q=%EB%8D%94+%EC%9B%B9%ED%88%B0+%3A+%EC%98%88%EA%B3%A0%EC%82%B4%EC%9D%B8&oq=%EB%8D%94+%EC%9B%B9%ED%88%B0+%3A+%EC%98%88%EA%B3%A0%EC%82%B4%EC%9D%B8&aqs=chrome..69i57.268j0j7&sourceid=chrome&ie=UTF-8-->
+            </div>
+          </li>
+          <li id="king">
+            <p>나는 왕이로소이다</p>
+            <p>I am the King</p>
+            <a id="kingArrowDown" class="arrow floatfix">
+              <!--This line adds the down arrow from the FontAwesome website-->
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="kingArrowUp" class="arrow floatfix">
+              <!--This line adds the up arrow from the FontAwesome website-->
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownKing" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2012</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>솔비 | Sol-Bi</dd>
+              </dl>
+              <p class="plot">Before Grand Prince Chungnyeong becomes King Sejong the Great, he places a slave in his throne and ventures outside of the palace walls. There, Grand Prince Chungnyeong experiences the life of common people and society at large.</p>
+              <!--Sourced from https://asianwiki.com/I_am_the_King_-_Korean_Movie-->
+            </div>
+          </li>
+          <li id="spy">
+            <p>스파이 파파</p>
+            <p>Spy Papa</p>
+            <a id="spyArrowDown" class="arrow floatfix">
+              <!--This line adds the down arrow from the FontAwesome website-->
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="spyArrowUp" class="arrow floatfix">
+              <!--This line adds the up arrow from the FontAwesome website-->
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownSpy" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2011</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>순복 | Soon-Bok</dd>
+              </dl>
+              <p class="plot">The year was 1974 when anti-communist sentiment was rampant. This is a story about a North Korean spy who went to the South with his anti-communist daughter. Le Man-ho (37 years old) was a Korean spy who went to the South 14 years ago. He lived in a small town and ran a dry cleaning business.</p>
+              <!--Sourced from https://www.koreanfilm.or.kr/eng/films/index/filmsView.jsp?movieCd=20112181#:~:text=Film%20Directory-,Spy%20Papa%20(2011),ran%20a%20dry%20cleaning%20business.-->
+            </div>
+          </li>
+          <li id="family">
+            <p>우리 이웃의 범죄 가족사진</p>
+            <p>Sin of a Family</p>
+            <a id="familyArrowDown" class="arrow floatfix">
+              <!--This line adds the down arrow from the FontAwesome website-->
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="familyArrowUp" class="arrow floatfix">
+              <!--This line adds the up arrow from the FontAwesome website-->
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownFamily" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2010</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>정명희 | Jung Myung-Hee</dd>
+              </dl>
+              <p class="plot">There is a kidnapping and murder of a young child in a small South Korean city. Detective Jo becomes involved in the case. At first he acts without a sense of duty, but changes as he faces the truth of a horrible case.</p>
+              <!--Sourced from https://asianwiki.com/Sin_of_a_Family-->
+            </div>
+          </li>
+          <li id="man">
+            <p>파괴된 사나이</p>
+            <p>Man of Vendetta</p>
+            <a id="manArrowDown" class="arrow floatfix">
+              <!--This line adds the down arrow from the FontAwesome website-->
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <a id="manArrowUp" class="arrow floatfix">
+              <!--This line adds the up arrow from the FontAwesome website-->
+              <i class="fas fa-caret-up"></i>
+            </a>
+            <div id="dropDownMan" class="dropDownInfo">
+              <dl class="floatfix"> <!--Defines a description list-->
+                <dt>Year: </dt> <!--Defines terms or names-->
+                <dd>2010</dd> <!--Describes a term or name-->
+                <dt>Character name: </dt>
+                <dd>주혜린 | Joo Hye-Rin</dd>
+              </dl>
+              <p class="plot">Joo Young-Soo is a minister whose daughter (Hye-Rin) gets kidnapped. Eventually the minister loses his faith in God, quits the church and opens a business. 8 years later, Young-Soo's wife still works feverishly to find their daughter and in the process becomes hospitalized. Then out of the blue, the abductor contacts Young-Soo and demands a ransom for his daughter. The former minister must make the most difficult of choices. He then sets out to rescue his daughter once and for all.</p>
+              <!--Sourced from https://asianwiki.com/Man_of_Vendetta-->
+            </div>
+          </li>
+        </ul>
+
+      </section>
+
+
+    </main>
+
+    <footer>
+
+      <div class="social">
+        <ul class="social_List floatfix">
+          <li><a href="https://www.instagram.com/wow_kimsohyun/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/hellokimsohyun"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Kim_So-hyun"><i class="fab fa-wikipedia-w"></i></a></li>
+          <li><a href="https://asianwiki.com/Kim_So-Hyun_(1999)"><img src="img/asianwiki_logo.png"/></a></li>
+        </ul>
+      </div>
+
+      <div class="copyright floatfix">
+        <p>COPYRIGHT © 2021 CULTURE DEPOT ALL RIGHTS RESERVED</p>
+      </div>
+
+    </footer>
+
+    <script>
+      document
+        .getElementById("riverArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownRiver);
+      document
+        .getElementById("riverArrowUp") //id for the arrow to close the drop down for each Drama
+        .addEventListener("click", closeDropDownRiver)
+
+
+      document
+        .getElementById("nokduArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownNokdu);
+      document
+        .getElementById("nokduArrowUp") //id for the arrow to close the drop down for each Drama
+        .addEventListener("click", closeDropDownNokdu)
+
+
+      document
+        .getElementById("alarmArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownAlarm);
+      document
+        .getElementById("alarmArrowUp") //id for the arrow to close the drop down for each Drama
+        .addEventListener("click", closeDropDownAlarm)
+
+
+      document
+        .getElementById("radioArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownRadio);
+      document
+        .getElementById("radioArrowUp") //id for the arrow to close the drop down for each Drama
+        .addEventListener("click", closeDropDownRadio)
+
+
+      document
+        .getElementById("emperorArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownEmperor);
+      document
+        .getElementById("emperorArrowUp") //id for the arrow to close the drop down for each Drama
+        .addEventListener("click", closeDropDownEmperor)
+
+
+      document
+        .getElementById("goblinArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownGoblin);
+      document
+        .getElementById("goblinArrowUp") //id for the arrow to close the drop down for each Drama
+        .addEventListener("click", closeDropDownGoblin)
+
+
+      document
+        .getElementById("ghostArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownGhost);
+      document
+        .getElementById("ghostArrowUp") //id for the arrow to close the drop down for each Drama
+        .addEventListener("click", closeDropDownGhost)
+
+
+      document
+        .getElementById("pageArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownPage);
+      document
+        .getElementById("pageArrowUp") //id for the arrow to close the drop down for each Drama
+        .addEventListener("click", closeDropDownPage)
+
+
+      document
+        .getElementById("nightmareArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownNightmare);
+      document
+        .getElementById("nightmareArrowUp") //id for the arrow to close the drop down for each Drama
+        .addEventListener("click", closeDropDownNightmare)
+
+
+      document
+        .getElementById("who_are_youArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownWho_are_you);
+      document
+        .getElementById("who_are_youArrowUp") //id for the arrow to close the drop down for each Drama
+        .addEventListener("click", closeDropDownWho_are_you)
+
+
+      document
+        .getElementById("smellsArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownSmells);
+      document
+        .getElementById("smellsArrowUp") //id for the arrow to close the drop down for each Drama
+        .addEventListener("click", closeDropDownSmells)
+
+
+      document
+        .getElementById("voiceArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownVoice);
+      document
+        .getElementById("voiceArrowUp") //id for the arrow to close the drop down for each Drama
+        .addEventListener("click", closeDropDownVoice)
+
+
+      document
+        .getElementById("moonArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownMoon);
+      document
+        .getElementById("moonArrowUp") //id for the arrow to close the drop down for each Drama
+        .addEventListener("click", closeDropDownMoon)
+
+
+      document
+        .getElementById("princessArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownPrincess);
+      document
+        .getElementById("princessArrowUp") //id for the arrow to close the drop down for each movie
+        .addEventListener("click", closeDropDownPrincess)
+
+
+      document
+        .getElementById("unforgettableArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownUnforgettable);
+      document
+        .getElementById("unforgettableArrowUp") //id for the arrow to close the drop down for each movie
+        .addEventListener("click", closeDropDownUnforgettable)
+
+
+      document
+        .getElementById("killerArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownKiller);
+      document
+        .getElementById("killerArrowUp") //id for the arrow to close the drop down for each movie
+        .addEventListener("click", closeDropDownKiller)
+
+
+      document
+        .getElementById("kingArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownKing);
+      document
+        .getElementById("kingArrowUp") //id for the arrow to close the drop down for each movie
+        .addEventListener("click", closeDropDownKing)
+
+
+      document
+        .getElementById("spyArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownSpy);
+      document
+        .getElementById("spyArrowUp") //id for the arrow to close the drop down for each movie
+        .addEventListener("click", closeDropDownSpy)
+
+
+      document
+        .getElementById("familyArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownFamily);
+      document
+        .getElementById("familyArrowUp") //id for the arrow to close the drop down for each movie
+        .addEventListener("click", closeDropDownFamily)
+
+      document
+        .getElementById("manArrowDown") //id for the arrow on the page
+        .addEventListener("click", openDropDownMan);
+      document
+        .getElementById("manArrowUp") //id for the arrow to close the drop down for each movie
+        .addEventListener("click", closeDropDownMan)
+
+
+    </script>
+
+  </body>
+</html>
