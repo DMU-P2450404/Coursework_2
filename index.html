@@ -52,13 +52,13 @@
         <h1 id=homeHeading class="floatfix">About</h1>
 
         <!--Body information-->
-        <p id="aboutText" class="floatfix">
-          <!--TEXT HERE NEEDS TO BE AS LONG AS THE LOREM IPSUM HERE AS IT FITS NICELY IN ALL WIDTHS. YOU CAN USE THIS PART IF YOU WANT TO: As a young Korean actress, Kim So Hyun is making her talent known all over the world. Find out everything about her life and works, see some beautiful photos, as well as hear some of her interviews.-->
-          김소현 Kim So Hyun
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          <br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div id="aboutText">
+          <p class="floatfix">
+            As a young Korean actress, Kim So Hyun is making her talent known all over the world. She began her career at the age of seven in 2006. Thanks to her important roles in 해를 품은 달 Moon Embracing the Sun in 2012 and 보고 싶다 Missing you in 2013, she gained a lot of public interest. Her first lead role was in 후아유: 학교 2015 Who Are You: School 2015 in 2015. Since then, she has been in a huge range of dramas. This include the historical melodrama 군주-가면의 주인 The Emperor: Onwer of the Mask in 2017, the romantic comedy 라디오 로맨스 Radio Romance in 2018 and, most recently, Korean folklore 달이 뜨는 강 River Where the Moon Rises in 2021.</p>
+          <p class="floatfix">
+            Kim So Hyun has been nicknamed the "Nation's Little Sister" and "Queen of Child Actresses" by the Korean media. Because of all her works, she has made herself into a top Hallyu star. With more than 10.7 million followers on her Instagram account, she is even the youngest South Korean actress to have more 10 million followers on social media. Find out everything about her life and works, see some beautiful photos, as well as hear some of her interviews.
+          </p>
+        </div>
 
         <!--Listed information-->
         <ul id="aboutList" class="floatfix">
@@ -124,35 +124,36 @@
               <div id="awardsHeader"><h1>Awards</h1></div>
             </li>
             <li id="KBS_2019">
-              <img src="img/KBS_2019_Logo.jpeg" alt="KBS Drama Awards 2019 logo"/>
+              <img src="img/awards/KBS_2019_Logo.jpeg" alt="KBS Drama Awards 2019 logo"/>
               <!--Image sourced from: https://asianwiki.com/File:2019_KBS_Drama_Awards-P1.jpg-->
             </li>
             <li id="MBC_2017">
-              <img src="img/MBC_2017_Logo.jpeg" alt="MBC Drama Awards 2017 logo"/>
+              <img src="img/awards/MBC_2017_Logo.jpeg" alt="MBC Drama Awards 2017 logo"/>
               <!--Image sourced from: https://namu.wiki/jump/127aebyxOulAFKjMOIETDy3OVfYbOjjq%2FM8KNLeSgRrCSQk8GbKmOvwZ%2B2CD3XxSexeI7NZDTz8%2FavWqxvVtyV2i8lYjggQENp%2FaknaZIbw%3D-->
             </li>
             <li id="KBS_2015">
-              <img src="img/KBS_2015_Logo.jpeg" alt="KBS Drama Awards 2015 logo"/>
+              <img src="img/awards/KBS_2015_Logo.jpeg" alt="KBS Drama Awards 2015 logo"/>
               <!--Image sourced from: https://asianwiki.com/File:2015_KBS_Drama_Awards-p1.jpg-->
             </li>
             <li id="KBS_2014">
-              <img src="img/KBS_2014_Logo.jpeg" alt="KBS Drama Awards 2014 logo"/>
+              <img src="img/awards/KBS_2014_Logo.jpeg" alt="KBS Drama Awards 2014 logo"/>
               <!--Image sourced from: https://asianwiki.com/File:2014_KBS_Drama_Awards-p1.jpg-->
             </li>
             <li id="SBS_2013">
-              <img src="img/SBS_2013_Logo.jpg" alt="SBS Drama Awards 2013 logo"/>
+              <img src="img/awards/SBS_2013_Logo.jpg" alt="SBS Drama Awards 2013 logo"/>
               <!--Image sourced from: https://en.wikipedia.org/wiki/2013_SBS_Drama_Awards#/media/File:2013_SBS_Drama_Awards.jpg-->
             </li>
             <li id="MBC_2012">
-              <img src="img/MBC_2012_Logo.jpeg" alt="MBC Drama Awards 2012 logo"/>
+              <img src="img/awards/MBC_2012_Logo.jpeg" alt="MBC Drama Awards 2012 logo"/>
               <!--Image sourced from: https://asianwiki.com/images/e/ed/2012_MBC_Drama_Awards-a000.jpg-->
             </li>
           </ul>
             <!--Information sourced from: https://asianwiki.com/Kim_So-Hyun_(1999)-->
 
           <!--These divs are for the popups when the award logos are clicked to show more information-->
+          <!--I can use the same class names as the popups for the Gallery page as this html file does not have access to the Gallery page style sheet-->
           <div id="KBS_2019_Popup" class="popup">
-            <img src="img/KBS_2019_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for KBS Drama Awards 2019"/>
+            <img src="img/awards/KBS_2019_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for KBS Drama Awards 2019"/>
             <!--Image sourced from: https://entertain.naver.com/read?oid=015&aid=0004266142-->
             <div id="KBS_2019_Info" class="popupInfo">
               <h2>KBS Drama Awards 2019</h2>
@@ -171,7 +172,7 @@
           </div>
 
           <div id="MBC_2017_Popup" class="popup">
-            <img src="img/MBC_2017_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for MBC Drama Awards 2017"/>
+            <img src="img/awards/MBC_2017_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for MBC Drama Awards 2017"/>
             <!--Image sourced from: https://photos.hancinema.net/photos/photo926123.jpg-->
             <div id="MBC_2017_Info" class="popupInfo">
               <h2>MBC Drama Awards 2017</h2>
@@ -188,7 +189,7 @@
           </div>
 
           <div id="KBS_2015_Popup" class="popup">
-            <img src="img/KBS_2015_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for KBS Drama Awards 2015"/>
+            <img src="img/awards/KBS_2015_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for KBS Drama Awards 2015"/>
             <!--Image sourced from: https://www.hancinema.net/photos-2015-kbs-drama-awards-red-carpet--actresses-89980.html-->
             <div id="KBS_2015_Info" class="popupInfo">
               <h2>KBS Drama Awards 2015</h2>
@@ -209,7 +210,7 @@
           </div>
 
           <div id="KBS_2014_Popup" class="popup">
-            <img src="img/KBS_2014_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for KBS Drama Awards 2014"/>
+            <img src="img/awards/KBS_2014_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for KBS Drama Awards 2014"/>
             <!--Image sourced from: https://www.hancinema.net/photos-2014-kbs-drama-awards-red-carpet-photos-actresses-77089.html-->
             <div id="KBS_2014_Info" class="popupInfo">
               <h2>KBS Drama Awards 2014</h2>
@@ -226,7 +227,7 @@
           </div>
 
           <div id="SBS_2013_Popup" class="popup">
-            <img src="img/SBS_2013_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for SBS Drama Awards 2013"/>
+            <img src="img/awards/SBS_2013_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for SBS Drama Awards 2013"/>
             <!--Image sourced from: https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5129%2F2013%2F12%2F31%2F1388487262_630023_59_20131231195502.jpg&type=sc960_832-->
             <div id="SBS_2013_Info" class="popupInfo">
               <h2>SBS Drama Awards 2013</h2>
@@ -243,7 +244,7 @@
           </div>
 
           <div id="MBC_2012_Popup" class="popup">
-            <img src="img/MBC_2012_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for MBC Drama Awards 2012"/>
+            <img src="img/awards/MBC_2012_Outfit.jpeg" alt="Kim So Hyun's red carpet outfit for MBC Drama Awards 2012"/>
             <!--Image sourced from: https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F038%2F2012%2F12%2F30%2F2012123022472363_1_rstarjun_59_20121230225738.jpg&type=sc960_832-->
             <div id="MBC_2012_Info" class="popupInfo">
               <h2>MBC Drama Awards 2012</h2>

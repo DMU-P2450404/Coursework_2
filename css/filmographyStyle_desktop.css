@@ -31,6 +31,7 @@
   }
   .filmIntro .filmAbout p {
     margin: 5px 0 0; /*top, left and right, bottom*/
+    text-indent: 10%;
   }
 }
 

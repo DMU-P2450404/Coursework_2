@@ -3,6 +3,7 @@
   p {
     font-size: 17px;
     font-weight: 200;
+    text-indent: 10%;
   }
   .filmIntro, .dramas, .movies {
     padding: 30px 5vw 30px; /*Top, left and right, bottom*/

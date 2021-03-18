@@ -1,0 +1,197 @@
+/*This is for screens that are bigger than 426px wide (tablet)*/
+@media screen and (min-width: 426px) {
+  p {
+    font-size: 17px;
+    font-weight: 200;
+  }
+  .galleryIntro, .interview {
+    padding: 30px 5vw 30px; /*Top, left and right, bottom*/
+  }
+  .collection {
+    padding-top: 1vw;
+  }
+}
+
+/*This is for the heading section */
+@media screen and (min-width: 426px) {
+  #GalleryHeading {
+    width: 50%;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25); /*right, bottom, blur, colour*/
+    float: right;
+  }
+  .galleryAbout {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    padding-right: 3.5vw;
+  }
+  .galleryAbout h1 {
+    margin: -5px 0 8px; /*top, left and right, bottom*/
+    font-size: 40px;
+  }
+  .galleryIntro .galleryAbout p {
+    margin: 5px 0 0; /*top, left and right, bottom*/
+    text-indent: 10%;
+  }
+}
+
+/*This is for the Collection section*/
+@media screen and (min-width: 426px) {
+  .collection img {
+    width: 100%;
+    height: 33vw;
+    object-fit: cover;
+  }
+  /*Giving each photo a grid area name to use in the grip template*/
+  #photo1 {
+    grid-area: box1;
+  }
+  #photo2 {
+    grid-area: box2;
+  }
+  #photo3 {
+    grid-area: box3;
+    object-position: 100% 30%;
+  }
+  #photo4 {
+    grid-area: box4;
+    height: 66.6vw;
+  }
+  #photo5 {
+    grid-area: box5;
+  }
+  #photo6 {
+    grid-area: box6;
+  }
+  #photo7 {
+    grid-area: box7;
+  }
+  #photo8 {
+    grid-area: box8;
+  }
+  #photo9 {
+    grid-area: box9;
+    object-position: 100% 5%;
+  }
+  #photo10 {
+    grid-area: box10;
+  }
+  #photo11 {
+    grid-area: box11;
+    height: 66.6vw;
+  }
+  #photo12 {
+    grid-area: box12;
+    object-position: 100% 0%;
+  }
+  #photo13 {
+    grid-area: box13;
+  }
+  #photo14 {
+    grid-area: box14;
+  }
+  #photo15 {
+    grid-area: box15;
+    object-position: 100% 0%;
+  }
+  #photo16 {
+    grid-area: box16;
+    height: 66.6vw;
+  }
+  #photo17 {
+    grid-area: box17;
+  }
+  #photo18 {
+    grid-area: box18;
+    object-position: 100% 60%;
+  }
+  .collectionInner {
+    display: grid;
+    width: 100vw;
+    /*Using a grid template for easier manipulation and easier to read the code*/
+    /*Source: https://www.w3schools.com/cssref/pr_grid-template-areas.asp*/
+    grid-template-areas:
+      "box1 box2 box3"
+      "box4 box4 box5"
+      "box4 box4 box6"
+      "box7 box8 box9"
+      "box10 box11 box11"
+      "box12 box11 box11"
+      "box13 box14 box15"
+      "box16 box16 box17"
+      "box16 box16 box18";
+    grid-gap: 3px;
+  }
+
+  /*This is for the image popups in the Collection section*/
+  .popup {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.7s;
+    width: 100vw;
+    background-color: rgba(235, 218, 255, 0.6);
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: auto;
+    z-index: 1;
+  }
+  .popup img {
+    width: 50vw;
+    height: 100%;
+    object-fit: cover;
+    max-height: 66.6vw;
+    margin-left: 25vw;
+    margin-bottom: -5px;
+  }
+  .closeBtn {
+    position: absolute;
+    right: 15px;
+    font-size: 4vw;
+    z-index: 1;
+    color: #340058;
+  }
+  /*Repositioning most of the images for when clicked*/
+  #photo4_popup, #photo5_popup, #photo6_popup {
+    margin-top: calc(33vw + 3px); /*Height of each row plus the margin between each row*/
+  }
+  #photo7_popup, #photo8_popup, #photo9_popup {
+    margin-top: calc(99.9vw + 4px);
+  }
+  #photo10_popup, #photo11_popup, #photo12_popup {
+    margin-top: calc(133.3vw + 4px);
+  }
+  #photo13_popup, #photo14_popup, #photo15_popup {
+    margin-top: calc(199.9vw + 6px);
+  }
+  #photo16_popup, #photo17_popup, #photo18_popup {
+    margin-top: calc(233.2vw + 6px);
+  }
+
+  /*This is for the Interview section*/
+  .interview h1 {
+    margin: -5px 0 5px 0; /*top and bottom, then left and right*/
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .interview h2 {
+    margin: -5px 0 5px 0; /*top and bottom, then left and right*/
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+  }
+  audio {
+    display: block;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .int1 {
+    border-bottom: 1px solid rgba(229, 193, 254, 0.25);
+    padding-bottom: 25px;
+  }
+  .int2 {
+    padding-top: 15px;
+  }
+}

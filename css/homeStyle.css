@@ -52,6 +52,7 @@
   p {
     font-size: 16px;
     font-weight: 100;
+    text-indent: 10%;
   }
 
   /*---This is for the Home intro section---*/
@@ -196,6 +197,7 @@
   p {
     font-size: 17px;
     font-weight: 200;
+    text-indent: 10%;
   }
   h1 {
     font-size: 50px;
@@ -361,6 +363,7 @@
   p {
     font-size: 18px;
     font-weight: 200;
+    text-indent: 10%;
   }
   h1 {
     font-size: 60px;

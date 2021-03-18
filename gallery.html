@@ -8,6 +8,11 @@
     <link href="css/generalStyle.css" rel="stylesheet" type="text/css"/>
     <link href="css/navStyle.css" rel="stylesheet" type="text/css"/>
     <link href="css/footerStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/galleryStyle_mobile.css" rel="stylesheet" type="text/css"/>
+    <link href="css/galleryStyle_tablet.css" rel="stylesheet" type="text/css"/>
+    <link href="css/galleryStyle_desktop.css" rel="stylesheet" type="text/css"/>
+    <link href="css/galleryStyle_desktop2.css" rel="stylesheet" type="text/css"/>
+    <!--Split the screen sizes into seperate css files for better organisation and ease to read-->
     <script src="js/java.js"></script>
     <!--This will be used to get icons from this website-->
     <script src="https://kit.fontawesome.com/cb68f94bdf.js" crossorigin="anonymous"></script>
@@ -41,25 +46,216 @@
 
     <main>
 
-      <h1>Gallery</h1>
-
-      <p style="padding: 0px 15px 2500px">
-        김소현 Kim So Hyun
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-
-      <section class="galleryIntro">
+      <section class="galleryIntro floatfix">
         <!--light grey background, heading, text, image-->
+        <div class="galleryAbout">
+          <h1>Gallery</h1>
+          <p>
+            Kim So Hyun is well known for her beauty, and with good reason. Since being a child actress, over the years of her work, she has been invloved in countless of photoshoots, including big magazines like Marie Claire and Vogue. It is impossible to include every single image that has ever been taken of this gorgeous woman. But here is a collection that range between all kinds of styles, ages and charm. Click on each image to view the full image.
+          </p>
+        </div>
+        <img src="img/GalleryHeading.JPG" alt="Kim So Hyun header image" id="GalleryHeading"/>
       </section>
 
       <section class="collection">
         <!--dark purple background, heading, images-->
+        <div class="collectionInner">
+          <!--Each of these divs are to show the full versions of the images when they are clicked-->
+          <!--I can use the same class names as the popups for the Home page as this html file does not have access to the Home page style sheet-->
+          <div id="photo1_popup" class="popup">
+            <img src="img/col/photo1.jpg" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo1CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo1.jpg" alt="Kim So Hyun photoshoot image" id="photo1"/>
+
+          <div id="photo2_popup" class="popup">
+            <img src="img/col/photo2.jpg" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo2CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo2.jpg" alt="Kim So Hyun photoshoot image" id="photo2"/>
+
+          <div id="photo3_popup" class="popup">
+            <img src="img/col/photo3.jpeg" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo3CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo3.jpeg" alt="Kim So Hyun photoshoot image" id="photo3"/>
+
+          <div id="photo4_popup" class="popup">
+            <img src="img/col/photo4.jpg" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo4CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo4.jpg" alt="Kim So Hyun photoshoot image" id="photo4"/>
+
+          <div id="photo5_popup" class="popup">
+            <img src="img/col/photo5.jpg" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo5CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo5.jpg" alt="Kim So Hyun photoshoot image" id="photo5"/>
+
+          <div id="photo6_popup" class="popup">
+            <img src="img/col/photo6.PNG" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo6CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo6.PNG" alt="Kim So Hyun photoshoot image" id="photo6"/>
+
+          <div id="photo7_popup" class="popup">
+            <img src="img/col/photo7.jpg" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo7CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo7.jpg" alt="Kim So Hyun photoshoot image" id="photo7"/>
+
+          <div id="photo8_popup" class="popup">
+            <img src="img/col/photo8.jpg" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo8CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo8.jpg" alt="Kim So Hyun photoshoot image" id="photo8"/>
+
+          <div id="photo9_popup" class="popup">
+            <img src="img/col/photo9.jpg" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo9CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo9.jpg" alt="Kim So Hyun photoshoot image" id="photo9"/>
+
+          <div id="photo10_popup" class="popup">
+            <img src="img/col/photo10.PNG" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo10CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo10.PNG" alt="Kim So Hyun photoshoot image" id="photo10"/>
+
+          <div id="photo11_popup" class="popup">
+            <img src="img/col/photo11.PNG" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo11CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo11.PNG" alt="Kim So Hyun photoshoot image" id="photo11"/>
+
+          <div id="photo12_popup" class="popup">
+            <img src="img/col/photo12.PNG" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo12CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo12.PNG" alt="Kim So Hyun photoshoot image" id="photo12"/>
+
+          <div id="photo13_popup" class="popup">
+            <img src="img/col/photo13.jpg" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo13CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo13.jpg" alt="Kim So Hyun photoshoot image" id="photo13"/>
+
+          <div id="photo14_popup" class="popup">
+            <img src="img/col/photo14.png" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo14CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo14.png" alt="Kim So Hyun photoshoot image" id="photo14"/>
+
+          <div id="photo15_popup" class="popup">
+            <img src="img/col/photo15.PNG" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo15CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo15.PNG" alt="Kim So Hyun photoshoot image" id="photo15"/>
+
+          <div id="photo16_popup" class="popup">
+            <img src="img/col/photo16.png" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo16CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo16.png" alt="Kim So Hyun photoshoot image" id="photo16"/>
+
+          <div id="photo17_popup" class="popup">
+            <img src="img/col/photo17.png" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo17CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo17.png" alt="Kim So Hyun photoshoot image" id="photo17"/>
+
+          <div id="photo18_popup" class="popup">
+            <img src="img/col/photo18.jpg" alt="Kim So Hyun photoshoot image" class="popup_image"/>
+            <a id="photo18CloseBtn" class="closeBtn">
+                <!--This line adds the close button from the FontAwesome website-->
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <img src="img/col/photo18.jpg" alt="Kim So Hyun photoshoot image" id="photo18"/>
+
+        </div>
+
       </section>
 
       <section class="interview">
         <!--dark grey background, heading, audios-->
+        <!--Interivew 1 is about child roles-->
+        <!--mp3 and wav chosen as they are used on most browsers-->
+        <h1>Interviews</h1>
+
+        <div class="int1">
+          <h2>Child Roles</h2>
+          <audio controls="true">
+            <source src="aud/Int_ChildRoles.wav" type='audio/wav'/>
+            <source src="aud/Int_ChildRoles.mp3" type='audio/mpeg'/>
+            <!--Only two formats have been used due to GitHub limit-->
+            <!--mp3 and wav chosen as they are used on most browsers-->
+            <p>If your browser cannot support the video, place click <a href="aud/Int_ChildRoles.mp3">here</a> .</p>
+          </audio>
+        </div>
+
+        <div class="int2">
+          <h2>Love Alarm</h2>
+          <audio controls="true">
+            <source src="aud/Int_LoveAlarm.wav" type='audio/wav'/>
+            <source src="aud/Int_LoveAlarm.mp3" type='audio/mpeg'/>
+            <!--Only two formats have been used due to GitHub limit-->
+            <!--mp3 and wav chosen as they are used on most browsers-->
+            <p>If your browser cannot support the video, place click <a href="aud/Int_LoveAlarm.mp3">here</a> .</p>
+          </audio>
+        </div>
+
       </section>
 
     </main>
@@ -80,6 +276,135 @@
       </div>
 
     </footer>
+
+    <script>
+    document
+      .getElementById("photo1") //id for the image on the page
+      .addEventListener("click", showPhoto1);
+    document
+      .getElementById("photo1CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto1)
+
+    document
+      .getElementById("photo2") //id for the image on the page
+      .addEventListener("click", showPhoto2);
+    document
+      .getElementById("photo2CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto2)
+
+    document
+      .getElementById("photo3") //id for the image on the page
+      .addEventListener("click", showPhoto3);
+    document
+      .getElementById("photo3CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto3)
+
+    document
+      .getElementById("photo4") //id for the image on the page
+      .addEventListener("click", showPhoto4);
+    document
+      .getElementById("photo4CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto4)
+
+    document
+      .getElementById("photo5") //id for the image on the page
+      .addEventListener("click", showPhoto5);
+    document
+      .getElementById("photo5CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto5)
+
+    document
+      .getElementById("photo6") //id for the image on the page
+      .addEventListener("click", showPhoto6);
+    document
+      .getElementById("photo6CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto6)
+
+    document
+      .getElementById("photo7") //id for the image on the page
+      .addEventListener("click", showPhoto7);
+    document
+      .getElementById("photo7CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto7)
+
+    document
+      .getElementById("photo8") //id for the image on the page
+      .addEventListener("click", showPhoto8);
+    document
+      .getElementById("photo8CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto8)
+
+    document
+      .getElementById("photo9") //id for the image on the page
+      .addEventListener("click", showPhoto9);
+    document
+      .getElementById("photo9CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto9)
+
+    document
+      .getElementById("photo10") //id for the image on the page
+      .addEventListener("click", showPhoto10);
+    document
+      .getElementById("photo10CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto10)
+
+    document
+      .getElementById("photo11") //id for the image on the page
+      .addEventListener("click", showPhoto11);
+    document
+      .getElementById("photo11CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto11)
+
+    document
+      .getElementById("photo12") //id for the image on the page
+      .addEventListener("click", showPhoto12);
+    document
+      .getElementById("photo12CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto12)
+
+    document
+      .getElementById("photo13") //id for the image on the page
+      .addEventListener("click", showPhoto13);
+    document
+      .getElementById("photo13CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto13)
+
+    document
+      .getElementById("photo14") //id for the image on the page
+      .addEventListener("click", showPhoto14);
+    document
+      .getElementById("photo14CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto14)
+
+    document
+      .getElementById("photo15") //id for the image on the page
+      .addEventListener("click", showPhoto15);
+    document
+      .getElementById("photo15CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto15)
+
+    document
+      .getElementById("photo16") //id for the image on the page
+      .addEventListener("click", showPhoto16);
+    document
+      .getElementById("photo16CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto16)
+
+    document
+      .getElementById("photo17") //id for the image on the page
+      .addEventListener("click", showPhoto17);
+    document
+      .getElementById("photo17CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto17)
+
+    document
+      .getElementById("photo18") //id for the image on the page
+      .addEventListener("click", showPhoto18);
+    document
+      .getElementById("photo18CloseBtn") //id for the button to close the popup for each image
+      .addEventListener("click", hidePhoto18)
+
+    </script>
 
   </body>
 </html>

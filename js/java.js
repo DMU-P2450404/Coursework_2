@@ -497,3 +497,239 @@ closeDropDownMan = () => {
   manArrowDown.style.visibility = "visible"; //Making the down arrow visible
   manArrowDown.style.display = "block";
 };
+
+
+//All the following parts are for the popups for the Collection section on the Gallery page
+showPhoto1 = () => {
+  let popup = document.getElementById("photo1_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto1 = () => {
+  let popup = document.getElementById("photo1_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto2 = () => {
+  let popup = document.getElementById("photo2_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto2 = () => {
+  let popup = document.getElementById("photo2_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto3 = () => {
+  let popup = document.getElementById("photo3_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto3 = () => {
+  let popup = document.getElementById("photo3_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto4 = () => {
+  let popup = document.getElementById("photo4_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto4 = () => {
+  let popup = document.getElementById("photo4_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto5 = () => {
+  let popup = document.getElementById("photo5_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto5 = () => {
+  let popup = document.getElementById("photo5_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto6 = () => {
+  let popup = document.getElementById("photo6_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto6 = () => {
+  let popup = document.getElementById("photo6_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto7 = () => {
+  let popup = document.getElementById("photo7_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto7 = () => {
+  let popup = document.getElementById("photo7_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto8 = () => {
+  let popup = document.getElementById("photo8_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto8 = () => {
+  let popup = document.getElementById("photo8_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto9 = () => {
+  let popup = document.getElementById("photo9_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto9 = () => {
+  let popup = document.getElementById("photo9_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto10 = () => {
+  let popup = document.getElementById("photo10_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto10 = () => {
+  let popup = document.getElementById("photo10_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto11 = () => {
+  let popup = document.getElementById("photo11_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto11 = () => {
+  let popup = document.getElementById("photo11_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto12 = () => {
+  let popup = document.getElementById("photo12_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto12 = () => {
+  let popup = document.getElementById("photo12_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto13 = () => {
+  let popup = document.getElementById("photo13_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto13 = () => {
+  let popup = document.getElementById("photo13_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto14 = () => {
+  let popup = document.getElementById("photo14_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto14 = () => {
+  let popup = document.getElementById("photo14_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto15 = () => {
+  let popup = document.getElementById("photo15_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto15 = () => {
+  let popup = document.getElementById("photo15_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto16 = () => {
+  let popup = document.getElementById("photo16_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto16 = () => {
+  let popup = document.getElementById("photo16_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto17 = () => {
+  let popup = document.getElementById("photo17_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto17 = () => {
+  let popup = document.getElementById("photo17_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
+
+showPhoto18 = () => {
+  let popup = document.getElementById("photo18_popup"); //id for the popup for each photo
+  popup.style.visibility = "visible";
+  popup.style.opacity = 1;
+};
+hidePhoto18 = () => {
+  let popup = document.getElementById("photo18_popup"); //id for the popup for each photo
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 700);
+};
