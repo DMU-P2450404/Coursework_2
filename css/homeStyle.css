@@ -52,7 +52,6 @@
   p {
     font-size: 16px;
     font-weight: 100;
-    text-indent: 10%;
   }
 
   /*---This is for the Home intro section---*/
@@ -68,6 +67,7 @@
   #aboutText {
     color: #eeeeee;
     padding: 0px 25px; /*top and bottom, then left and right*/
+    text-indent: 10%;
   }
   #aboutList {
     margin: 50px 10px; /*top and bottom, then left and right*/
@@ -197,7 +197,6 @@
   p {
     font-size: 17px;
     font-weight: 200;
-    text-indent: 10%;
   }
   h1 {
     font-size: 50px;
@@ -220,6 +219,7 @@
     box-sizing: border-box;
     float: left;
     padding-right: 25px;
+    text-indent: 10%;
   }
   .about {
     overflow: hidden;
@@ -363,7 +363,6 @@
   p {
     font-size: 18px;
     font-weight: 200;
-    text-indent: 10%;
   }
   h1 {
     font-size: 60px;
@@ -386,6 +385,7 @@
     box-sizing: border-box;
     float: left;
     padding-right: 25px;
+    text-indent: 10%;
   }
   .about {
     overflow: hidden;

@@ -3,7 +3,6 @@
   p {
     font-size: 18px;
     font-weight: 200;
-    text-indent: 10%;
   }
   .galleryIntro, .interview {
     padding: 30px 6vw 30px; /*Top, left and right, bottom*/
@@ -32,6 +31,7 @@
   }
   .galleryIntro .galleryAbout p {
     margin: 5px 0 0; /*top, left and right, bottom*/
+    text-indent: 10%;
   }
 }
 

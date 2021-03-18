@@ -9,7 +9,6 @@
 }
 .galleryIntro p {
   color: #6218a4;
-  text-indent: 10%;
 }
 
 /*This is for the Collection section*/
@@ -58,6 +57,7 @@
   .galleryIntro p {
     padding: 0;
     margin: 5px 0 10px; /*top, left and right, bottom*/
+    text-indent: 10%;
   }
 
   /*This is for the Collection section*/
