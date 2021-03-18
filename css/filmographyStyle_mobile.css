@@ -18,7 +18,6 @@ h1 {
   p {
     font-size: 16px;
     font-weight: 100;
-    text-indent: 10%;
   }
   .filmIntro, .dramas, .movies {
     padding: 5vw;
@@ -41,6 +40,7 @@ h1 {
   .filmIntro p {
     padding: 0;
     margin: 5px 0 0; /*top, left and right, bottom*/
+    text-indent: 10%;
   }
 }
 
